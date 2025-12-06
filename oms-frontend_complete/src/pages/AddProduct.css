@@ -1,0 +1,29 @@
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.product-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.product-form input {
+  padding: 8px;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.product-form button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

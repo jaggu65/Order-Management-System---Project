@@ -1,0 +1,29 @@
+services:
+  mongo:
+    image: mongo
+    container_name: oms-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build: ./oms-backend
+    container_name: oms-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/omsdb
+
+  frontend:
+    build: ./oms-frontend_complete
+    container_name: oms-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:

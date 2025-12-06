@@ -1,0 +1,113 @@
+.orders-page {
+  padding: 24px;
+  animation: fadeIn 0.5s ease-in-out;
+  color: #f8fafc;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.add-order-btn {
+  padding: 10px 16px;
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.add-order-btn:hover {
+  transform: scale(1.05);
+}
+
+.table-container {
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 12px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  color: 	#1c1c1e; /* Brighter text */
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.02); /* subtle background for contrast */
+}
+
+
+.order-table th {
+  background-color: #1e293b;
+  color: #38bdf8;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.9em;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background-color: #facc15;
+  color: #1e1e1e;
+}
+
+.status.shipped {
+  background-color: #0ea5e9;
+  color: #f8fafc;
+}
+
+.status.delivered {
+  background-color: #10b981;
+  color: #f8fafc;
+}
+
+.status.cancelled {
+  background-color: #ef4444;
+  color: #f8fafc;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .download-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+
+  .download-btn:hover {
+    background-color: #388e3c;
+  }
+
+}

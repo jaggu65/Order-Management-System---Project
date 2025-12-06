@@ -1,0 +1,54 @@
+/* Simplified White-Themed App.css with light glassmorphism */
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-blur: blur(12px);
+  --text-color: #111111;
+  --accent-color: #3e4a91;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fb;
+  color: var(--text-color);
+}
+
+.container,
+.card,
+.sidebar {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: var(--accent-color);
+  color: #fff;
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  color: var(--text-color);
+}

@@ -1,0 +1,50 @@
+.shipments-page {
+  padding: 2rem;
+}
+
+.shipments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-shipment-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.shipment-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.shipment-table th,
+.shipment-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.status.packed {
+  background-color: orange;
+}
+
+.status.dispatched {
+  background-color: #28a745;
+}
+
+.status.delivered {
+  background-color: #007bff;
+}
